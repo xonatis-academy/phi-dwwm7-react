@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemple de bouton</title>
+    </head>
+    <body>
+        <button>Cliquez ici</button>
+        <script>
+            // On développe le handler
+            function afficherHello() {
+                alert('Hello !');
+            }
+
+            // On récupère l'élément à binder
+            let button = document.querySelector('button');
+
+            // On bind à l'événement click de l'élément
+            button.addEventListener('click', function() {
+                afficherHello();
+            })
+        </script>
+    </body>
+</html>

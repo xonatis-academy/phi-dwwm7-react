@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemple de input</title>
+    </head>
+    <body>
+        <input type="text" />
+        <button>Cliquez ici</button>
+        <script>
+            // Dès que l'input "change", on enregistre la valeur de l'input
+            // dans la "variable"
+            let variable = '';
+            let input = document.querySelector('input');
+            input.addEventListener('change', function(e) {
+                variable = e.target.value;
+            });
+
+            // Dès que l'utilisateur click que le bouton,
+            // on affiche le contenu de la variable
+            let button = document.querySelector('button');
+            button.addEventListener('click', function() {
+                console.log(variable);
+            })
+        </script>
+    </body>
+</html>
