@@ -1,4 +1,12 @@
+import { useHistory } from 'react-router-dom';
+
 function Home() {
+    let history = useHistory();
+
+    const handleClick = () => {
+        history.push('/question-1');
+    }
+
     return (
         <div className="text-center">
             <div className="display-4 mb-5">
@@ -9,7 +17,7 @@ function Home() {
                 <label>Entrez votre email :</label>
                 <input className="form-control text-center" />
             </div>
-            <button className="btn btn-success">Répondre au quizz <i className="fas fa-question-circle ml-1"></i></button>
+            <button className="btn btn-success" onClick={handleClick}>Répondre au quizz <i className="fas fa-question-circle ml-1"></i></button>
         </div>
     );
 }
