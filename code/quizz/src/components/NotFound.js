@@ -1,6 +1,6 @@
 function NotFound() {
     return (
-        <h1>NotFound</h1>
+        <h1>Whhaat ??</h1>
     );
 }
 

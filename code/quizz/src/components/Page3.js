@@ -1,6 +1,8 @@
+import Question from "./Question";
+
 function Page3() {
     return (
-        <h1>Page3</h1>
+        <Question textAfficher="Aimez-vous React.js, Vue.js ou Angular ?" />
     );
 }
 

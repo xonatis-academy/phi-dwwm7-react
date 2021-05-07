@@ -1,6 +1,8 @@
+import Question from "./Question";
+
 function Page2() {
     return (
-        <h1>Page2</h1>
+        <Question textAfficher="Aimez-vous le langage Javascript ?" />
     );
 }
 

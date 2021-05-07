@@ -1,6 +1,8 @@
+import Question from "./Question";
+
 function Page1() {
     return (
-        <h1>Page1</h1>
+        <Question textAfficher="Aimez-vous faire le design d'un site internet ?" />
     );
 }
 
